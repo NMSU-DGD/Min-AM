@@ -8,6 +8,8 @@ public class GameMaster : MonoBehaviour {
 	public Text toyText;
 	public Text objectiveText;
 	public Text exitText;
+	public Text InputText;
+	public Text InsufficientText;
 
 	//private Text levelText;
 	//private GameObject levelImage;

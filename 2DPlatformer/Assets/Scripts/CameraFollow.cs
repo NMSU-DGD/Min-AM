@@ -34,13 +34,13 @@ public class CameraFollow : MonoBehaviour
     }
 
 
-    private void Update()
+    /*private void Update()
     {
         TrackPlayer();
-    }
+    }*/
 
 
-    private void TrackPlayer()
+    /*private void TrackPlayer()
     {
         // By default the target x and y coordinates of the camera are it's current x and y coordinates.
         float targetX = transform.position.x;
@@ -62,5 +62,5 @@ public class CameraFollow : MonoBehaviour
 
         // Set the camera's position to the target position with the same z component.
         transform.position = new Vector3(targetX, targetY, transform.position.z);
-    }
+    }*/
 }
