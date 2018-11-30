@@ -24,8 +24,11 @@ public class PlatformerCharacter2D : MonoBehaviour
 	private Rigidbody2D rigi;
 	private GameMaster gm;
 
+	public AudioSource audio;
+
 	void Start()  {
 		gm = GameObject.FindGameObjectWithTag ("GM").GetComponent<GameMaster> ();
+		audio = GetComponent<AudioSource>();
 	}
 
     private void Awake()
@@ -135,6 +138,7 @@ public class PlatformerCharacter2D : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D col)  {
 		if (col.CompareTag ("Coin")) {
+			audio.Play();
 			Destroy(col.gameObject);
 			gm.points += 1;
 		}
