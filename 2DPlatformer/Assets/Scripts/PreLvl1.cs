@@ -3,8 +3,6 @@ using System.Collections;
 
 public class PreLvl1 : MonoBehaviour {
 
-	//public string startLevel;
-
 	void Start () {
 	
 		StartCoroutine (Waiting("Level1Scene"));

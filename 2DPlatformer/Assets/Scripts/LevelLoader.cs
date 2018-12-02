@@ -27,14 +27,14 @@ public class LevelLoader : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D other)  {
 		if (other.CompareTag ("Player")) {
-			if (toyPoints >= 6) {
+			if (toyPoints >= 8) {
 				gm.InputText.text = ("[E] to Open");
 				if (Input.GetKeyDown ("e")) {
 					Application.LoadLevel (levelToLoad);
 				}
 			}
 			else  {
-				gm.InsufficientText.text = ("Insufficient Toys Collected");
+				gm.InsufficientText.text = ("Insufficient Coins Collected");
 			}
 		}
 		/*if (other.name == "Player") {
@@ -44,7 +44,7 @@ public class LevelLoader : MonoBehaviour {
 
 	void OnTriggerStay2D (Collider2D other)  {
 		if(other.CompareTag("Player"))  {
-			if (toyPoints >= 6) {
+			if (toyPoints >= 8) {
 				if (Input.GetKeyDown ("e")) {
 					Application.LoadLevel (levelToLoad);
 				}

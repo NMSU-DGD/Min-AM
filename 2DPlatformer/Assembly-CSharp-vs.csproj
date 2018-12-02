@@ -48,10 +48,12 @@
   <ItemGroup>
      <Compile Include="Assets\Fonts\Script\scriptTexttest.cs" />
      <Compile Include="Assets\Scripts\Bouncy.cs" />
+     <Compile Include="Assets\Scripts\BouncyLeft.cs" />
      <Compile Include="Assets\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Checkpoint.cs" />
      <Compile Include="Assets\Scripts\ControlsMenu.cs" />
+     <Compile Include="Assets\Scripts\EndScreen.cs" />
      <Compile Include="Assets\Scripts\FallingPlatform.cs" />
      <Compile Include="Assets\Scripts\GameMaster.cs" />
      <Compile Include="Assets\Scripts\KillPlayer.cs" />
@@ -65,6 +67,7 @@
      <Compile Include="Assets\Scripts\Platformer2DUserControl.cs" />
      <Compile Include="Assets\Scripts\PlatformerCharacter2D.cs" />
      <Compile Include="Assets\Scripts\PreLvl1.cs" />
+     <Compile Include="Assets\Scripts\PreLvl2.cs" />
      <Compile Include="Assets\Scripts\Restarter.cs" />
      <Compile Include="Assets\Scripts\Tiling.cs" />
      <Compile Include="Assets\Scripts\TimedPlatform.cs" />
@@ -119,6 +122,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\ContrastStretch\MinMaxReduction.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\_Antialiasing\SSAA.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\RadialBlur.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\Level2.tiled2unity.xml" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\ContrastComposite.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepth.shader" />
@@ -189,6 +193,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\_Antialiasing\FXAA2.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaColorKey.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\Level2Map.tiled2unity.xml" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey-Instanced.shader" />

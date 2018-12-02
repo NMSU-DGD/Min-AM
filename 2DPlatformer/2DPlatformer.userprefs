@@ -1,15 +1,22 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PauseMenu.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EndScreen.cs">
     <Files>
-      <File FileName="Assets\Tiled2Unity\Shaders\shaDefault.shader" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EndScreen.cs" Line="24" Column="40" />
+      <File FileName="Assets\Scripts\Bouncy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PauseMenu.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MainMenu.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\LevelManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PreLvl1.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ControlsMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PauseMenu.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\LevelLoader.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MenuMusic.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameMaster.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Platformer2DUserControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlatformerCharacter2D.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\KillPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PreLvl2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BouncyLeft.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

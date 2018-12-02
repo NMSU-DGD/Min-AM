@@ -8,6 +8,7 @@ public class KillPlayer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		levelManager = FindObjectOfType<LevelManager> ();
+
 	}
 	
 	// Update is called once per frame
@@ -17,6 +18,7 @@ public class KillPlayer : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D other)  {
 		if (other.name == "Player")  {
+			//StartCoroutine (levelManager.RespawnPlayer());
 			levelManager.RespawnPlayer();
 		}
 	}

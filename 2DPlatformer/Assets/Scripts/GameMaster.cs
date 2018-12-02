@@ -11,7 +11,7 @@ public class GameMaster : MonoBehaviour {
 	public Text InputText;
 	public Text InsufficientText;
 
-	public AudioSource audio;
+	//public AudioSource audio;
 
 	//private Text levelText;
 	//private GameObject levelImage;
@@ -20,13 +20,14 @@ public class GameMaster : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Invoke("DisableText", 5f);
-		audio = GetComponent<AudioSource>();
+		//audio = GetComponent<AudioSource>();
+		//Invoke ("PlayAudio", 0.0f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		toyText.text = ("Toys: " + points + " / 8");
-		if (points == 6) {
+		toyText.text = ("Coins: " + points + " / 10");
+		if (points == 8) {
 			exitText.text = ("EXIT OPEN!");
 			StartCoroutine (BlinkText());
 		}
@@ -35,10 +36,16 @@ public class GameMaster : MonoBehaviour {
 	void DisableText ()  {
 		objectiveText.enabled = false;
 	}
-	
+
+	/*void PlayAudio()   {
+		if (points == 6) {
+			audio.Play();
+		}
+	}*/
+
 	public IEnumerator BlinkText()  {
 		int a = 0;
-		while (a != 5) {
+		while (a != 7) {
 			exitText.text = "";
 			yield return new WaitForSeconds (0.5f);
 			exitText.text = ("EXIT OPEN!");

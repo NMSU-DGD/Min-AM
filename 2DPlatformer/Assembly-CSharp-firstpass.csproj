@@ -237,6 +237,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\ContrastStretch\MinMaxReduction.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\_Antialiasing\SSAA.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\RadialBlur.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\Level2.tiled2unity.xml" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\ContrastComposite.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepth.shader" />
@@ -307,6 +308,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\_Antialiasing\FXAA2.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaColorKey.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\Level2Map.tiled2unity.xml" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey-Instanced.shader" />

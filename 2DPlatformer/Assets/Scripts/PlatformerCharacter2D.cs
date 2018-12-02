@@ -24,11 +24,22 @@ public class PlatformerCharacter2D : MonoBehaviour
 	private Rigidbody2D rigi;
 	private GameMaster gm;
 
-	public AudioSource audio;
+	private AudioSource audio1;
+
+	public AudioClip coin;
+	public AudioClip coins8;
+	public AudioClip coins10;
+
+	//public AudioSource audio2;
+
+	//public LevelManager levelManager;
 
 	void Start()  {
 		gm = GameObject.FindGameObjectWithTag ("GM").GetComponent<GameMaster> ();
-		audio = GetComponent<AudioSource>();
+		//levelManager = FindObjectOfType<LevelManager> ();
+		audio1 = GetComponent<AudioSource>();
+		//audio2 = GetComponent<AudioSource>();
+
 	}
 
     private void Awake()
@@ -49,6 +60,8 @@ public class PlatformerCharacter2D : MonoBehaviour
 
         // Set the vertical animation
         anim.SetFloat("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
+
+		anim.enabled = true;
     }
 
 
@@ -137,12 +150,55 @@ public class PlatformerCharacter2D : MonoBehaviour
 	}
 
 	void OnTriggerEnter2D(Collider2D col)  {
+		int point = gm.points;
 		if (col.CompareTag ("Coin")) {
-			audio.Play();
-			Destroy(col.gameObject);
-			gm.points += 1;
+
+			if (gm.points < 7 | (gm.points > 7 & gm.points < 9))  {
+				audio1.clip = coin;
+				Destroy(col.gameObject);
+				//point += 1;
+				gm.points += 1;
+				Debug.Log (gm.points);
+			}
+
+			else if (gm.points == 7)  {
+				audio1.clip = coins8;
+				Destroy(col.gameObject);
+				//point += 1;
+				gm.points += 1;
+				Debug.Log (gm.points);
+			}
+
+			else if (gm.points == 9)  {
+				audio1.clip = coins10;
+				Destroy(col.gameObject);
+				//point += 1;
+				gm.points += 1;
+				Debug.Log (gm.points);
+			}
+
+			audio1.Play();
 		}
 	}
+
+
+
+	//Death Animation, Work on Later
+	/*void OnTriggerEnter2D (Collider2D other)  {
+		if (other.CompareTag ("Coin")) {
+			audio.Play();
+			Destroy(other.gameObject);
+			gm.points += 1;
+		}
+		if (other.CompareTag ("Trap"))  {
+			anim.SetBool ("IsDead", true);
+			StartCoroutine (levelManager.RespawnPlayer());
+			//rigidbody2D.AddForce (new Vector2 (0, 500));
+		}
+		//anim.SetBool ("IsDead", false);
+
+
+	}*/
 }
 
 
