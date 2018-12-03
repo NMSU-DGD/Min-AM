@@ -175,6 +175,7 @@
      <None Include="Assets\Standard Assets\Effects\LightShafts\Shaders\Raymarch.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\EdgeDetectNormals.shader" />
      <None Include="Assets\Tiled2Unity\License.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Level1Alt.tiled2unity.xml" />
      <None Include="Assets\Standard Assets\Effects\LightShafts\Shaders\FinalInterpolation.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects (Pro Only)\Shaders\PrepareSunShaftsBlur.shader" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
