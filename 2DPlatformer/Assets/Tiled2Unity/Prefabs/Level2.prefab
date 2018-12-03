@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &105082
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 406132}
+  - 60: {fileID: 6019404}
+  m_Layer: 10
+  m_Name: Collision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &118304
 GameObject:
   m_ObjectHideFlags: 1
@@ -190,22 +206,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &175994
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 435646}
-  - 60: {fileID: 6088968}
-  m_Layer: 10
-  m_Name: Collision
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &186604
 GameObject:
   m_ObjectHideFlags: 1
@@ -294,6 +294,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &406132
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 433210}
+  m_RootOrder: 6
 --- !u!4 &411076
 Transform:
   m_ObjectHideFlags: 1
@@ -346,21 +358,9 @@ Transform:
   - {fileID: 449566}
   - {fileID: 461930}
   - {fileID: 431804}
-  - {fileID: 435646}
+  - {fileID: 406132}
   m_Father: {fileID: 460438}
   m_RootOrder: 0
---- !u!4 &435646
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 175994}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 433210}
-  m_RootOrder: 6
 --- !u!4 &440172
 Transform:
   m_ObjectHideFlags: 1
@@ -1096,12 +1096,12 @@ PolygonCollider2D:
       - {x: 13701, y: -3200}
       - {x: 13701, y: -3246}
       - {x: 13798, y: -3246}
---- !u!60 &6088968
+--- !u!60 &6019404
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 175994}
+  m_GameObject: {fileID: 105082}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
